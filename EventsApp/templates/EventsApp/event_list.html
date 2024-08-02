@@ -1,0 +1,34 @@
+{% extends 'EventsApp/base.html' %}
+
+{% block content %}
+<h1>Event List</h1>
+<p><a href="{% url 'admin:index' %}">link to admin panel</a></p>
+<a href="{% url 'event_create' %}" class="btn btn-green">Add New Event</a> 
+<table>
+    <thead>
+        <tr>
+            <th>Client Name</th>
+            <th>Client Email</th>
+            <th>Client Phone No</th>
+            <th>First Contacted</th>
+            <th>Last Contacted</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for event in events %}
+        <tr>
+            <td>{{ event.client_name }}</td>
+            <td>{{ event.client_email }}</td>
+            <td>{{ event.client_phone_number }}</td>
+            <td>{{ event.date_first_contacted}}</td>
+            <td>{{ event.date_last_contacted}}</td>
+            <td>
+                <a href="{% url 'event_update' event.pk %}" class="btn btn-green">Edit</a>
+                <a href="{% url 'event_delete' event.pk %}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
