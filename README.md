@@ -3,19 +3,19 @@
 
 ## Installation1. Clone the repository:
 
-git clone https://github.com/
-            ▪ Navigate to the project directory:
-              cd EventPlanningApp
-            ▪ Install the required dependencies:
-              bash
-              pip install -r requirements.txt
-          Usage
-            ▪ Run the application:
-              python app.py
-            ▪ Open your browser and navigate to http://localhost:5000 to access the app.
-          Features
-            ▪ User authentication
-            ▪ Event creation and management
-            ▪ RSVP functionality
-          Contributing
-          Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+## git clone https://github.com/
+#            ▪ Navigate to the project directory:
+#              cd EventPlanningApp
+#            ▪ Install the required dependencies:
+#              bash
+#              pip install -r requirements.txt
+##          Usage
+#            ▪ Run the application:
+#              python app.py
+#            ▪ Open your browser and navigate to http://localhost:5000 to access the app.
+##          Features
+#            ▪ User authentication
+#            ▪ Event creation and management
+#            ▪ RSVP functionality
+##          Contributing
+#          Feel free to fork this repository and submit pull requests. For major changes, please open an issue            first to discuss what you would like to change.
